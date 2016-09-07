@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020DBC791D76D1CE0079B0C8 /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 020DBC781D76D1CE0079B0C8 /* ChineseToPinyin.m */; };
 		02D861111D70121900F70770 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D861101D70121900F70770 /* main.m */; };
 		02D861141D70121900F70770 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D861131D70121900F70770 /* AppDelegate.m */; };
 		02D861171D70121900F70770 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D861161D70121900F70770 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020DBC771D76D1CE0079B0C8 /* ChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyin.h; sourceTree = "<group>"; };
+		020DBC781D76D1CE0079B0C8 /* ChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyin.m; sourceTree = "<group>"; };
 		02D8610C1D70121900F70770 /* TransformDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransformDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D861101D70121900F70770 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		02D861121D70121900F70770 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		020DBC761D76D1CE0079B0C8 /* ChineseToPinyin */ = {
+			isa = PBXGroup;
+			children = (
+				020DBC771D76D1CE0079B0C8 /* ChineseToPinyin.h */,
+				020DBC781D76D1CE0079B0C8 /* ChineseToPinyin.m */,
+			);
+			path = ChineseToPinyin;
+			sourceTree = "<group>";
+		};
 		02D861031D70121900F70770 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 		02D8610E1D70121900F70770 /* TransformDemo */ = {
 			isa = PBXGroup;
 			children = (
+				020DBC761D76D1CE0079B0C8 /* ChineseToPinyin */,
 				02D861121D70121900F70770 /* AppDelegate.h */,
 				02D861131D70121900F70770 /* AppDelegate.m */,
 				02D861151D70121900F70770 /* ViewController.h */,
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02D861171D70121900F70770 /* ViewController.m in Sources */,
+				020DBC791D76D1CE0079B0C8 /* ChineseToPinyin.m in Sources */,
 				02D861141D70121900F70770 /* AppDelegate.m in Sources */,
 				02D861111D70121900F70770 /* main.m in Sources */,
 			);
@@ -496,6 +510,7 @@
 				02D8613B1D70121A00F70770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02D8613C1D70121A00F70770 /* Build configuration list for PBXNativeTarget "TransformDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +519,7 @@
 				02D8613E1D70121A00F70770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02D8613F1D70121A00F70770 /* Build configuration list for PBXNativeTarget "TransformDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +528,7 @@
 				02D861411D70121A00F70770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

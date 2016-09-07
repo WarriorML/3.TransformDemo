@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ChineseToPinyin.h"
 @interface ViewController ()
 
 @end
@@ -21,11 +21,21 @@
     NSString *k = [self transform:@"中国"];
     NSLog(@"%@",k);
     
+    NSString *pinyin = [ChineseToPinyin pinyinFromChiniseString:@"中国"];
+    
+    pinyin = [pinyin lowercaseString];
+    
+    NSLog(@"%@",pinyin);
+    
+//    获取第一个字母
+    char x = [ChineseToPinyin sortSectionTitle:@"mbcd"];
+    
+    NSLog(@"%c",x);
 }
 
 - (NSString *)transform:(NSString *)chinese
 {
-    NSMutableString *pinyin = [chinese mutableCopy];
+    NSMutableString *pinyin = [[NSMutableString alloc]initWithString:chinese];
 //    kCFStringTransformMandarinLatin方法转化出来的是带音标的拼音
     CFStringTransform((__bridge CFMutableStringRef)pinyin, NULL, kCFStringTransformMandarinLatin, NO);
 //    kCFStringTransformStripCombiningMarks 去掉音标
